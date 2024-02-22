@@ -7,6 +7,7 @@ What i want to add:
     - collision
     - preditor boids that dont flock but hunt boids
     - location setter so they will go to a location on mouse click
+    - Sliders for each param (speed, closeness, etc.)
     - add layers of steering diff, it slowly effects the boid and changes steering
 */
 
