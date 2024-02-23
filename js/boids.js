@@ -67,7 +67,6 @@ class Boid {
     align(boids) {
         let perception = 100;
         let steering = createVector();
-        let avg = createVector();
         let total = 0;
         for (let other of boids){
             let d = dist(
@@ -93,7 +92,6 @@ class Boid {
     cohesion(boids) {
         let perception = 50;
         let steering = createVector();
-        let avg = createVector();
         let total = 0;
         for (let other of boids){
             let d = dist(
@@ -166,7 +164,6 @@ class Boid {
         }
         if (total > 0) {
             steering.div(total);
-            //steering.sub(this.position);
             steering.setMag(this.maxSpeed);
             steering.sub(this.velocity);
             steering.limit(this.maxForce);
